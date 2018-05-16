@@ -1,0 +1,57 @@
+body{
+ margin: 0;
+  padding: 0;
+  font-family: "Monserrat", Arial, sans-serif;
+  font-size: 12px;
+  background-image: url(http://4everstatic.com/images/abstrait/le-fond-orange-168584.jpg);
+  background-position: bottom center;
+}
+
+.contenedor{
+ width: 80%;
+ margin: 0 auto;
+ background-color: aliceblue;
+ border-radius:20px;
+ color: #E34234;
+}
+header{
+  padding: 40px 5px;
+  margin-bottom: 20px;
+  background: url(https://k32.kn3.net/taringa/3/8/2/5/7/2/8/janooh/C67.jpg) no-repeat center center;
+  height: 200px;
+  background-size: 100%;
+}
+ header h1, header h2, header h3{
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+.contenedor section{
+  float: left;
+  width: 47%;
+margin 10px;
+}
+
+section h2{
+background: #D5AB2E;
+text-transform:  uppercase;
+padding: 10px;
+}
+#imagenes img{
+width: 15%;
+display: inline-block;
+padding: 10px;
+background: #C2C2C2;
+margin: 5px;
+}
+#imagenes img{
+  padding: 5px;
+  margin: 10px;
+  width: 25%;
+}
+
+/* Solucionar elementos*/
+.clear{
+  clear: both;
+
+}
