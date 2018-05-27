@@ -1,0 +1,48 @@
+/*Aqui vam los estilos generales del sitio*/
+{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #117722;
+}
+span::before{
+  content: "Estado inicial";
+  }
+@media only screen and ( max-width: 1024px) {
+  /*Aqui vam los estilos g para el ipad horizontal*/
+  body {
+    background-color: #8A3300;
+  }
+  span::before{
+    content: "Diseño para pantallas pequeñas";
+  }
+}
+
+/*Aqui vam los estilos para tabletas */
+@media only screen and (max-width : 768px){
+  body {
+    background-color: #512E5F;
+  }
+  span::before{
+    content: "VETE AL INFIERNO";
+  }
+}
+/*Aqui vam los estilos para mobiles: horizontal */                                                                                         */
+@media only screen and ( max-width: 480px){
+  body {
+    background-color: #F8C471;
+  }
+  span::before{
+    content: "MUERETE ";
+  }
+}
+/*Aqui vam los estilos para mobiles vertical*/
+@media only screen and ( max-width: 320px){
+  body {
+    background-color: #176153;
+  }
+  span::before{
+    content: ".l.";
+  }
+}
