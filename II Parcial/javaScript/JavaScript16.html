@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JavaScript 16</title>
+   <meta charset="UTF-8" />
+   <script type="text/javascript">
+
+   //length
+   var mensaje="Hola Mundo";
+   var numeroLetras=mensaje.length; //numeroLetras=10
+   //+
+   var mensaje1="Hola";
+   var mensaje2="Mundo";
+   var mensaje3 = mensaje1+mensaje2; //mensaje="Hola Mundo"
+   // Se puede fucionar con concat()
+   var mensaje4 = "Hola";
+   var mensaje5 = mensaje4.concat("Mundo"); //mensaje="hola Mundo"
+   //toUpperCase
+   var mensaje6="Hola";
+   var mensaje7= mensaje6.toUpperCase(); // mensaje2="HOLA"
+   //TolowerCase()
+   var mensaje8="HolA"
+   var menaje9= mensaje8.toLowerCase(); // mensaje="hola"
+   //charAt(posicion)
+   var mensaje10="Hola";
+   var letra1=mensaje10.charAt(0); //letra=H
+   letra2=mensaje10.charAt(2);// letra=l
+   //indexOf(caracter)
+   var mensaje11="Hola";
+   var posicion1=mensaje11.indexOf('a'); //posicion=3
+   posicion2= mensaje11.indexOf('b'); //posicion=-1
+   //lastlndexOf. La función lastIndexOf() comienza su búsqueda desde el final de la cadena hacia
+   //el principio, aunque la posición devuelta es la correcta empezando a contar desde el principio de la palabra.
+   var mensaje12="Hola";
+   var posicion3=mensaje12.lastIndexOf('a');//posicion=3;
+   posicion4 = mensaje12.lastIndexOf('b'); //posicion=-1
+   // subString(inicio, fin)
+   var mensaje13 = "Hola Mundo";
+   var porcion = mensaje13.substring(2); // porcion = "la Mundo"
+   porcion2 = mensaje13.substring(5); // porcion="Mundo"
+   porcion3 = mensaje13.substring(7); // porcion="ndo"
+       //Si se indica un inicio negativo, se devuelve la misma cadena original.
+       var mensaje14 = "Hola Mundo";
+       var porcion4 = mensaje14.substring(-2); // porcion="Hola Mundo"
+       //Cuando se indica el inicio y el final, se devuelve la parte de la cadena original comprendida entre
+       //la posición inicial y la inmediatamente anterior a la posición final.
+       var mensaje15 = "Hola Mundo";
+       var porcion5 = mensaje15.substring(1, 8); // porcion = "ola Mun"
+       porcion6 = mensaje15.substring(3, 4);     // porcion = "a"
+       //Si se indica un final más pequeño que el inicio, JavaScript los considera de forma inversa, ya
+      //que automáticamente asigna el valor más pequeño al inicio y el más grande al final:
+      var mensaje16 = "Hola Mundo";
+      var porcion7 = mensaje16.substring(5, 0); // porcion = "Hola "
+      porcion8 = mensaje16.substring(0, 5); // porcion = "Hola "
+  //Split(separador)
+  var palabra = "Hola";
+  var letras = palabra.split(""); // letras = ["H", "o", "l", "a"]
+   </script>
+   <body>
+     <p> Profe estas son las variables para que funcione el programa en la consola.<br>
+       <br>
+       En el Length usa las variables: <br>
+         mensaje y numeroLetras<br>
+         <br>
+      En el +, usa las variables: <br>
+      mensaje1, mensaje2 y para mostrar resultado es, mensaje3. <br>
+<br>
+      En el + concat(), usa las siguientes variables:<br>
+      mensaje4 y mensaje5.<br>
+      <br>
+      En toUpperCase() usa las siguientes variables.<br>
+      mensaje6 y mensaje7.<br>
+      <br>
+      En toLoweCase() usa las siguientes variables.<br>
+      mensaje8 y mensaje9.<br>
+      <br>
+      En charAt(posicion) usa las siguientes variables.<br>
+      mensaje10 y con estos muestra un resultado, letra1 y letra2.<br>
+      <br>
+      En indexOf(caracter) usa las siguientes variables.<br>
+      mensaje11, y  con estos muestra un resultado, posicion1 y posicion2.<br>
+      <br>
+      En lastIndexOf(carácter) usa las siguientes variables.<br>
+      mensaje12, y con estos muestras un resultado, posicion3 y posicion4.<br>
+      <br>
+      La funcion subString se dividira en varias partes.<br>
+         *La primera es inicio y final, la cual usa las siguientes variables.<br>
+         mensaje13, y para mostrar resultados son: porcion, porcion2 y porcion3.<br>
+         *En este caso es cuando el inicio negativo. <br>
+         mensaje14, y para mostrar resultado: porcion4. <br>
+         *Cuando se indica el inicio y el final. <br>
+         mensaje15, y para mostrar resultado: porcion5 y porcion6.<br>
+         *En este caso es cuanod se pone un final mas pequeño <br>
+         mensaje16, y mostrar resultado: porcion7 y porcion8<br>
+         <br>
+      En Split(separador) las variables a utilizar son:<br>
+      palabra, y mostrar resultado es: letras. <br>
+   </body>
+</html>
