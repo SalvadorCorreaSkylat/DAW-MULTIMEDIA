@@ -1,0 +1,18 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>JavaSCript30</title>
+  <meta charset="UTF-8"/>
+  <script>
+  function medidas(){
+    var alto = document.body.clientHeight;
+    var ancho = document.body.clientWidth;
+    document.getElementById("tam").innerHTML ="<b>alto:</b>"+alto+"<br><b>ancho</b>"+ancho;
+  }
+  </script>
+</head>
+<body onresize="medidas();">
+  <div id="tam">
+  </div>
+</body>
+</html>
