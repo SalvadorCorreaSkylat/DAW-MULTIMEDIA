@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>P&aacute;gina sencilla</title>
+  <script>
+  function iniciar(){
+    var label=document.getElementsByClassName("label");
+      for(x=0; x<label.length; x++){
+        label[x].style.color="Blue";
+      }
+    var negritas=document.getElementsByTagName("strong");
+    for(x=0;x<negritas.length; x++){
+      negritas[x].style.textTransform="uppercase";
+    }
+  document.getElementById("Apellido").style.fontStyle="italic";
+  document.querySelectorAll("#Apellido b")[0].style.fontStyle="normal";
+  /*var parrafo = document.createElement("p");
+  var contenido = document.createTextNode("!Hola Mundo ¡");
+parrafo.appendChild(contenido);
+document.body.appendChild(parrafo);*/
+var tds=document.getElementsByTagName("td");
+for(var x=0; x<tds.length; x++){
+  var texto=document.createTextNode(x+1);
+  tds[x].appendChild(texto);
+  tds[x].addEventListener("clic", function()){
+    alert(x+1);
+  }
+}
+
+  }
+
+  </script>
+  <style type="text/css">
+    #table{
+      width: 30px;
+      border-spacing: 0;
+      border:1px solid #ccc;
+    }
+    #table{
+      padding: 10px;
+    }
+  </style>
+</head>
+    <body onload="iniciar();">
+      <p id="titulo" class="label"> Esta p&aacute;gina es <strong>muy sencilla</strong></p>
+          <p id="Nombre" class="label"><strong>Nombre</strong> Salvador</p>
+            <p id="Apellido" class="label"><b>Apellido</b> Correa</p>
+
+            <table id="table" border="3">
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+    </body>
+</html>
