@@ -1,0 +1,10 @@
+1.	¿Qué código utilizas para crear una imagen nueva?
+R= 
+var libroImg = document.createElement('img');
+libroImg.src = libros[i].img;
+libroElem.appendChild(libroImg);
+
+2.	¿Qué código se encarga de agregar todos los elementos al body?
+R= document.body.appendChild(libroList);
+
+3.	Identifica el arreglo en el código y escríbelo como si fuera una tabla una base de datos (Filas y Columnas).

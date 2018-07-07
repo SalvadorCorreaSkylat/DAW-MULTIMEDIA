@@ -1,0 +1,11 @@
+Ex_01
+1.	¿Qué evento usaste para poder ejecutar la actualización de tus datos?
+ R= Onload
+2.	¿Qué código se encarga de agregar los elementos en la lista?
+R=   <ul class="listado" >
+    <li> Nickname: <span id="nombre"> Salvador Correa Jimenez </span></li>
+    <li>Favorites: <span id="pasatiempo"> Jugar videojuegos, leer poco, escuchar musica, hacer videos, dormir y actualmente ir a trabajar</span></li>
+    <li>Hometown: <span id="ciudad_natal"></span></li>
+   </ul>
+3.	¿Qué debería realizar si deseo eliminar los elementos de la lista al realizar un click al listado?
+R= Solo cambiar el Onload por el Onclick
